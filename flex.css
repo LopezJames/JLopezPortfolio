@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url(font/Teko-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Teko';
+}
+
+header{
+    background-image: url(image/backgroundflexUpper.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: auto;
+    width: auto;
+    animation-name: allAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.webname{
+    margin: 20px 12px 20px 25px;
+    display: flex;
+    animation-name: webnameAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes webnameAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.JL a{
+    color: white;
+    text-decoration: none;
+}
+
+.webname h1{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.web{
+    color: #E3B448;
+}
+
+.web a{
+    color: #E3B448;
+    text-decoration: none;
+}
+
+.tabs{
+    margin: 20px 25px 20px 15px;
+    font-size: 30px;
+    animation-name: tabsAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tabsAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.list{
+    display: flex;
+    gap: 5rem;
+    margin-top: 25px;
+}
+
+.tabs li{
+    list-style: none;
+
+}
+
+.tabs a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+.tabs a:hover{
+    filter: brightness(75%);
+    transition: 0.3s;
+}
+
+.container1{
+    height: 184vh;
+    background-image: url(image/backgroundflex.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+
+.flexTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+    animation-name: flexAnim;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.flexTitle a{
+    text-decoration: none;
+}
+
+@keyframes flexAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.flexTitle h1{
+    font-size: 6.5rem;
+    color: white;
+}
+
+.page{
+    color: #E3B448;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    animation-name: imgAnim;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes imgAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.images img{
+    border-radius: 10px;
+}
+
+.family{
+    display: flex;
+}
+
+.family img{
+    height: 25rem;
+    margin: 1rem 0 0 2rem;
+    border: white solid 3px;
+}
+
+.famDefinition{
+    display: flex;
+    margin: 0 0 0 2rem;
+}
+
+.F{ 
+    position: relative;
+    font-size: 15rem;
+    height: 1rem;
+    height: 2rem;
+    color: #E3B448;
+    height: 1rem;
+    line-height: 1;
+}
+
+
+.famDefinition p{
+    position: absolute;
+    bottom: 70rem;
+    font-size: 2rem;
+    width: 70rem;
+    text-align: justify;
+    font-family: 'Montserrat';
+}
+
+.famDefinition h1{
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.grad{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2rem 0 0;
+}
+
+.grad img{
+    height: 30rem;
+    border: white solid 3px;
+    bottom: 0;
+}
+
+.gradDefinition{
+    flex-direction: column;
+    margin: 1rem 23rem 0 0;
+}
+
+.G{
+    position: relative;
+    font-size: 15rem;
+    line-height: 10rem;
+    color: #E3B448;
+}
+
+.gradDefinition h1{
+    font-size: 5rem;
+}
+
+.gradDefinition p{
+    display: flex;
+    position: absolute;
+    width: 70rem;
+    height: 10rem;
+    font-size: 2rem;
+    text-align: justify;
+    font-family: 'Montserrat';
+}
+
+.band{
+    display: flex;
+}
+
+.band img{
+    height: 30rem;
+    margin: 0 0 0 4.5rem;
+    border: white solid 3px;
+}
+
+.bandDefinition{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 2rem;
+}
+
+.B{
+    position: relative;
+    font-size: 15rem;
+    color: #E3B448;
+}
+
+.bandDefinition h1{
+    font-size: 5rem;
+}
+
+.bandDefinition p{
+    display: flex;
+    position: absolute;
+    margin: 16rem 0 0 0;
+    font-size: 2rem;
+    width: 70rem;
+    text-align: justify;
+    font-family: 'Montserrat';
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1E5F74;
+}
+
+.footWebName{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footWebName a{
+    text-decoration: none;
+    font-size: 5rem;
+}
+
+.footWebName p{
+    margin-top: 5px;
+    font-family: 'Montserrat';
+}
+
+.JLfoot a{
+    color: white;
+}
+
+.Webfoot a{
+    color: #E3B448;
+}
+
+.ITC h1{
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: overline;
+    letter-spacing: 20px;
+}
+
+.ITC h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #E3B448;
+    letter-spacing: 15px;
+    font-family: 'Montserrat';
+}
+
+.creator{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    margin-bottom: 2rem;
+    text-decoration: overline;
+}
